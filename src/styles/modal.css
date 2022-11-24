@@ -1,0 +1,84 @@
+.modal__full {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--gray_4);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue_2);
+    width: 50%;
+    height: 80%;
+    gap: 37px;
+    border-radius: 5px;
+    animation: modalAnimation 1s ease;
+}
+
+@keyframes modalAnimation {
+    0% {
+        opacity: 0%;
+        transform: translateY(-20%);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title > h4, .title > span {
+    font-size: var(--text_3);
+    padding: 0 50px 30px;
+    color: var(--gray_1);
+}
+
+.title > span {
+    background-color: var(--gray_1);
+    border: none;
+    padding: 20px;
+    margin-right: 25px;
+    border-radius: 100%;
+    color: var(--gray_2);
+    cursor: pointer;
+    font-size: var(--text_4);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+    gap: 37px;
+}
+
+.section input, .section button {
+    height: 46px;
+    border-radius: 10px;
+    border: none;
+    font-size: var(--text_4);
+    background-color: var(--blue_3);
+    color: var(--gray_1);
+}
+
+.section input {
+    padding-left: 20px;
+    background-color: var(--gray_1);
+    color: var(--gray_5);
+}
+
+.section button {
+    cursor: pointer;
+}

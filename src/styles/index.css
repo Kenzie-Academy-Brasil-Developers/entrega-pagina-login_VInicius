@@ -1,1 +1,111 @@
-/* Desenvolva seu código aqui... */
+main {
+  display: flex;
+  width: 100%;
+}
+
+.title--home {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+  margin: 0 50px;
+  margin-top: -30px;
+}
+
+.title--home > img {
+  width: 200px;
+  height: 200px;
+}
+
+.title--home > h1 {
+  color: var(--blue_2);
+  margin-bottom: 50px;
+}
+
+.login,
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 100vh;
+  background-color: var(--blue_2);
+  align-items: center;
+}
+
+.login_div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  margin-left: 30%;
+}
+
+.login_div > h2 {
+  color: var(--gray_1);
+  font-weight: bold;
+}
+
+form {
+  width: 70%;
+}
+
+.form {
+  padding: 20px;
+}
+
+.label_form {
+  color: var(--gray_1);
+}
+
+.form--login {
+  color: var(--gray_5);
+  font-size: var(--text_4);
+}
+
+#email,
+#senha {
+  border-radius: 10px;
+  border: none;
+}
+
+#senha {
+  margin-bottom: 37px;
+}
+
+.esqueceu_senha {
+  width: 100%;
+  position: relative;
+}
+
+.esqueceu_senha > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--gray_1);
+  cursor: pointer;
+  margin-top: -32px;
+}
+
+.button {
+  font-size: var(--text_3);
+  padding: 10px;
+  background-color: var(--blue_3);
+  border: solid 1px var(--blue_3);
+  border-radius: 10px;
+  color: var(--gray_1);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--blue_1);
+  border: solid 1px var(--blue_1);
+}

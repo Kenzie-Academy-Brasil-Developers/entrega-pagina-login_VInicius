@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/globalStyles.css">
-    <link rel="stylesheet" href="./src/styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/modal.css">
     <title>Login</title>
-</head>
-<body>
+  </head>
+  <body>
+    <main>
+      <section class="modal__full">
+        <div class="modal">
+          <div class="title">
+            <h4>Esqueceu a senha?</h4>
+            <span class="close__modal">X</span>
+          </div>
+          <div class="section confir">
+            <input type="text" placeholder="Digite seu email..." />
+            <input
+              name="codigo"
+              id="codigo"
+              type="text"
+              placeholder="Digite o código que enviamos..."
+            />
+          </div>
+          <div class="section buttons">
+            <button for="codigo" type="submit">Verificar</button>
+            <button for="codigo" type="submit" class="close__modal--button">Criar nova senha</button>
+          </div>
+        </div>
+      </section>
+      <section class="title--home">
+        <img src="./src/img/Steam-Logo-PNG7.png" alt="Logo da Steam" />
+        <h1>Steam</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis
+          leo, suscipit eget porttitor viverra, blandit sed nisi. Nullam ornare
+          ultrices justo. Nullam vel vulputate lorem, sed blandit tortor. Donec
+          quis quam ligula. Integer interdum lectus magna, sit amet porttitor
+          orci ullamcorper vel.
+        </p>
+      </section>
+      <section class="login">
+        <div class="login_div">
+          <h2>Login</h2>
+          <form>
+            <label class="label_form" for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="form form--login"
+              placeholder="Insira seu email"
+            />
+            <label class="label_form" for="senha">Senha</label>
+            <input
+              type="text"
+              name="senha"
+              id="senha"
+              class="form form--login"
+              placeholder="Insira seu senha"
+            />
+            <div class="esqueceu_senha">
+                <span class="forgot__password">Esqueceu a senha?</span>
+            </div>
+            <button class="form button" type="submit">Logar</button>
+          </form>
+        </div>
+      </section>
+    </main>
     <script src="./src/scripts/modal.js"></script>
-</body>
+  </body>
 </html>
