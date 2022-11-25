@@ -13,8 +13,8 @@ function openModal_() {
     e.preventDefault();
     modal.style.display = "flex";
   });
-  
-closeModal_();
+
+  closeModal_();
 }
 
 openModal_();
@@ -27,9 +27,8 @@ function closeModal_() {
   if (codigo.value === "") {
     closeModalButton.addEventListener("click", (e) => {
       e.preventDefault();
-      console.log("click")
+      console.log("click");
       modal.style.display = "none";
     });
-  } 
-    
+  }
 }
