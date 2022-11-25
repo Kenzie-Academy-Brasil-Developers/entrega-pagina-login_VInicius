@@ -13,6 +13,8 @@ function openModal_() {
     e.preventDefault();
     modal.style.display = "flex";
   });
+  
+closeModal_();
 }
 
 openModal_();
@@ -22,14 +24,12 @@ function closeModal_() {
     e.preventDefault();
     modal.style.display = "none";
   });
-  if (codigo.value != undefined) {
-
+  if (codigo.value === "") {
     closeModalButton.addEventListener("click", (e) => {
-        console.log(codigo.value);
       e.preventDefault();
+      console.log("click")
       modal.style.display = "none";
     });
-  }
+  } 
+    
 }
-
-closeModal_();

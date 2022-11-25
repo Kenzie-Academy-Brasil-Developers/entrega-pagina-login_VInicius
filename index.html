@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
-    <link rel="stylesheet" href="./src/styles/modal.css">
+    <link rel="stylesheet" href="./src/styles/modal.css" />
     <title>Login</title>
   </head>
   <body>
@@ -21,6 +21,7 @@
           <div class="section confir">
             <input type="text" placeholder="Digite seu email..." />
             <input
+              class="codigo"
               name="codigo"
               id="codigo"
               type="text"
@@ -29,7 +30,9 @@
           </div>
           <div class="section buttons">
             <button for="codigo" type="submit">Verificar</button>
-            <button for="codigo" type="submit" class="close__modal--button">Criar nova senha</button>
+            <button for="codigo" type="submit" class="close__modal--button">
+              Criar nova senha
+            </button>
           </div>
         </div>
       </section>
@@ -65,7 +68,7 @@
               placeholder="Insira seu senha"
             />
             <div class="esqueceu_senha">
-                <span class="forgot__password">Esqueceu a senha?</span>
+              <span class="forgot__password">Esqueceu a senha?</span>
             </div>
             <button class="form button" type="submit">Logar</button>
           </form>
