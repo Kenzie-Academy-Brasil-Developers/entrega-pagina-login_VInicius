@@ -49,9 +49,9 @@
 .title > span {
     background-color: var(--gray_1);
     border: none;
-    padding: 20px;
+    padding: 13px;
     margin-right: 25px;
-    border-radius: 100%;
+    border-radius: 100vh;
     color: var(--gray_2);
     cursor: pointer;
     font-size: var(--text_4);
